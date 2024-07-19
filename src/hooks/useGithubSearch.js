@@ -3,7 +3,9 @@ import { Octokit } from "octokit"
 import { useDispatch, useSelector } from "react-redux"
 import { setResults } from "../redux/searchSlice"
 
-const octokit = new Octokit()
+const octokit = new Octokit({
+    auth: "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",
+})
 
 const queryGetGithubSearch = "get-github-search"
 
